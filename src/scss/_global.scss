@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+  
+  font-size: 62.5%; /* Pra usar rem divisivel por10*/
+  @media screen and (max-width: 480px) {
+    font-size: 55%;
+  }
+}
+
+body {
+  font-size: 1.6rem; /* Pra garantir q o padrao seja 16px no navegador*/
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+body, input, textarea, button {
+  font-family: $font-main;
+}
+
+/* GRID LAYOUT */
+.grid {
+  @include grid-layout();
+}
+  /* GRID LAYOUT */

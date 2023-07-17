@@ -1,0 +1,26 @@
+$font-main: Verdana;
+
+$color-main: #986dff;
+
+$color-white: #ffffff;
+$color-gray: #9ca3af;
+
+$bgcolor-main: #111111;
+$bgcolor-secondary: #151515;
+$bgcolor-border: #1f1f1f;
+
+
+@mixin grid-layout() {
+  width: 100%;
+  max-width: 1216px;
+
+  margin: 0 auto;
+}
+
+@mixin spacing-section() {
+  padding: 60px 20px;
+  
+  @media screen and (max-width: 480px) {
+    padding: 40px 15px;
+  }
+}
