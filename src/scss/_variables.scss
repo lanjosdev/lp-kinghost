@@ -1,9 +1,11 @@
-$font-main: Verdana;
+$font-main: 'Lato';
 
-$color-main: #986dff;
+$color-main: #5f3ca1;
+$color-secondary: #ffbf00;
 
 $color-white: #ffffff;
-$color-gray: #9ca3af;
+$color-gray1: #453f51;
+$color-gray2: #5e5570;
 
 $bgcolor-main: #111111;
 $bgcolor-secondary: #151515;
@@ -22,5 +24,25 @@ $bgcolor-border: #1f1f1f;
   
   @media screen and (max-width: 480px) {
     padding: 40px 15px;
+  }
+}
+
+@mixin spacing-lateral() {
+  padding: 0 20px;
+  
+  @media screen and (max-width: 480px) {
+    padding: 0 15px;
+  }
+}
+
+@mixin style-btn($height, $bg, $colorText) {
+  height: $height;
+  line-height: $height;
+  background-color: $bg;
+  color: $colorText;
+
+  &:hover {
+      background-color: $colorText;
+      color: $bg;
   }
 }
