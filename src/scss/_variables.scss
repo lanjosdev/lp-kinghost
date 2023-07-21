@@ -2,7 +2,6 @@ $font-main: 'Lato';
 
 $color-main: #5f3ca1;
 $color-secondary: #ffbf00;
-
 $color-white: #ffffff;
 $color-gray1: #453f51;
 $color-gray2: #5e5570;
@@ -26,7 +25,6 @@ $bgcolor-border: #1f1f1f;
     padding: 40px 15px;
   }
 }
-
 @mixin spacing-lateral() {
   padding: 0 20px;
   
@@ -35,14 +33,25 @@ $bgcolor-border: #1f1f1f;
   }
 }
 
-@mixin style-btn($height, $bg, $colorText) {
+@mixin style-btn($height, $bg, $fontSize, $colorText) {
   height: $height;
   line-height: $height;
   background-color: $bg;
+
+  font-size: $fontSize;
   color: $colorText;
+
+  transition: all .3s;
 
   &:hover {
       background-color: $colorText;
       color: $bg;
   }
+}
+
+@mixin flex-container($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }

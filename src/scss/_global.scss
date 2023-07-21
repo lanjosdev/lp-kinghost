@@ -12,8 +12,8 @@ body {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
-body, input, textarea, button {
-  font-family: $font-main;
+body, input, textarea, button, select, a {
+  font-family: $font-main, sans-serif;
 }
 
 /* GRID LAYOUT */
