@@ -13,6 +13,8 @@ section.s-hero {
         width: 100%;
         max-width: 488px;
 
+        padding-bottom: 8.6rem;
+
         h1 {
             font-family: PT Sans;
             font-size: 4.8rem;
@@ -30,7 +32,7 @@ section.s-hero {
         }
 
         .btn-primary {
-            @include style-btn(5.4rem, $color-secondary, 1.6rem, #381e66);
+            @include style-btn(5.4rem, $color-secondary, 16px, #381e66);
 
             margin-bottom: 8.6rem;
         }
@@ -39,8 +41,6 @@ section.s-hero {
             display: flex;
             align-items: center;
             gap: 1.6rem;
-
-            margin-bottom: 8.6rem;
 
             img {
                 background-color: rgba(124, 90, 186, 0.40);
@@ -54,9 +54,112 @@ section.s-hero {
     }
 
     .ilustration {
-        // max-width: 691.525px;
+        max-width: 691.525px;
 
         position: relative;
         top: 37px;
     }
+
+
+    /* Laptops baixa resolução */
+    @media screen and (max-width: 1024px) {
+        padding-bottom: 3.9rem;
+
+        .text {
+            padding-bottom: 0;
+
+            .btn-primary {
+                margin-bottom: 5.5rem;
+            }
+        }
+    }
+
+    /* Tablets */
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        padding-bottom: 0;
+
+        .grid { 
+            flex-direction: column;
+        }
+
+        .text {
+            margin: 0 auto;
+            margin-bottom: calc(55px - 37px);
+
+            .btn-primary {
+                margin-bottom: 4.1rem;
+            }
+
+            .conheca {
+                justify-content: center;
+            }
+        }
+
+        .ilustration {
+            left: -16px;
+        }
+    }
+
+    /* Tablets baixa resolução */
+    @media screen and (max-width: 600px) {
+
+        .text {
+            margin-bottom: calc(55px - 27px);
+
+            h1 {
+                margin-bottom: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .ilustration {
+            top: 27px;
+        }
+    }
+
+    /* Mobile geral */
+    @media screen and (max-width: 480px) {
+        padding-top: 3.9rem;
+
+        .text {
+            max-width: 310px;
+            margin-bottom: calc(55px - 21px);
+
+            h1 {
+                font-size: 32px;
+                line-height: 120%; /* 38.4px */
+            }
+        }
+
+        .ilustration {
+            top: 21px;
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    @media screen and (max-width: 600px) {
+      font-size: 55%;
+    }
+  }
