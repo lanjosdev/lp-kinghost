@@ -1,8 +1,14 @@
 // Padrões / Componentes:
+.grid {
+    @include grid-layout();
+}
+
 .btn-primary {
     display: inline-block;
+
+    font-family: PT Sans;
+    font-weight: 700;
     
     padding: 0 5rem;
     border-radius: 6px;
-    font-weight: bold;
 }

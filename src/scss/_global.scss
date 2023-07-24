@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
   
-  font-size: 62.5%; /* Pra usar rem divisivel por10*/
+  font-size: 62.5%; /* Pra usar rem divisivel por 10*/
   @media screen and (max-width: 480px) {
     font-size: 55%;
   }
@@ -15,9 +15,3 @@ body {
 body, input, textarea, button, select, a {
   font-family: $font-main, sans-serif;
 }
-
-/* GRID LAYOUT */
-.grid {
-  @include grid-layout();
-}
-  /* GRID LAYOUT */

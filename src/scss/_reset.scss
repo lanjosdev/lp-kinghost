@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   border: none;
-  outline: none;
 }
   
 img {
@@ -15,9 +13,12 @@ a {
   text-decoration: none;
 }
 
+input, textarea {
+  outline: none;
+}
+
 button {
   cursor: pointer;
-  // border: none;
 }
 
 ul, ol, li {

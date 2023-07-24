@@ -1,0 +1,62 @@
+section.s-hero {
+    @include spacing-lateral();
+    background-color: $color-main;
+    color: $color-white;
+    padding-top: 3.9rem;
+
+    .grid { 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 488px;
+
+        h1 {
+            font-family: PT Sans;
+            font-size: 4.8rem;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */
+
+            margin-bottom: 1.6rem;
+        }
+        p {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 150%; /* 27px */
+
+            margin-bottom: 3.2rem;
+        }
+
+        .btn-primary {
+            @include style-btn(5.4rem, $color-secondary, 1.6rem, #381e66);
+
+            margin-bottom: 8.6rem;
+        }
+
+        .conheca {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+
+            margin-bottom: 8.6rem;
+
+            img {
+                background-color: rgba(124, 90, 186, 0.40);
+                border-radius: 6px;
+                padding: 9px;
+            }
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .ilustration {
+        // max-width: 691.525px;
+
+        position: relative;
+        top: 37px;
+    }
+}
