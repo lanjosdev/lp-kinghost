@@ -2,7 +2,7 @@ section.s-hero {
     @include spacing-lateral();
     background-color: $color-main;
     color: $color-white;
-    padding-top: 3.9rem;
+    padding-top: calc(3.9rem + 11.9rem); //somando o padding top com altura do header
 
     .grid { 
         display: flex;
@@ -122,7 +122,7 @@ section.s-hero {
 
     /* Mobile geral */
     @media screen and (max-width: 480px) {
-        padding-top: 3.9rem;
+        padding-top: calc(27px + 86px);
 
         .text {
             max-width: 310px;
@@ -140,6 +140,109 @@ section.s-hero {
     }
 }
 
+section.s-resources {
+    @include spacing-lateral();
+    padding-top: 14.9rem;
+    padding-bottom: 9.9rem;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5.3rem;
+
+        h2 {
+            width: 100%;
+            max-width: 50.2rem;
+
+            color: $color-gray1;
+            font-family: PT Sans, sans-serif;
+            font-size: 3.2rem;
+            line-height: 130%; /* 41.6px */
+        }
+
+        p {
+            color: $color-gray2;
+            // font-weight: 500;
+            line-height: 150%; /* 24px */
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .content {
+        color: $color-gray2;
+        display: flex;
+        gap: 3.4rem;
+        p {
+            line-height: 165%; /* 26.4px */
+        }
+
+        .card-featured {
+            background-color: rgba(197, 190, 220, 0.10);
+            width: 100%;
+            max-width: 280px;
+            // height: 100%;
+            height: 323px;
+            padding: 4.1rem 4.2rem;
+
+            .bg-icon {
+                background-color: $color-white;
+                width: 64px;
+                height: 64px;
+                border-radius: 12px;
+                
+                padding: 20px;
+                margin-bottom: 3rem;
+            }
+
+            .info {
+                h3 {
+                    color: $color-main;
+                    font-size: 1.8rem;
+                    font-weight: 800;
+
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .list-resources {
+            display: flex;
+            gap: 7.9rem;
+            padding: 0 2rem;
+            border-bottom: 3px solid rgba(197, 190, 220, 0.10);
+
+            li {
+                width: 100%;
+                max-width: 238px;
+                padding: 4.1rem 0;
+
+                .bg-icon {
+                    background-color: rgba(197, 190, 220, 0.10);
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 12px;
+                    
+                    padding: 20px;
+                    margin-bottom: 3rem;
+                }
+
+                .info {
+                    h3 {
+                        color: $color-main;
+                        font-size: 1.8rem;
+                        font-weight: 800;
+
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -162,4 +265,4 @@ html {
     @media screen and (max-width: 600px) {
       font-size: 55%;
     }
-  }
+}
