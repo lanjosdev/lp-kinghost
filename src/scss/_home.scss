@@ -242,6 +242,126 @@ section.s-resources {
             }
         }
     }
+
+
+
+    // RESPONSIVIDADE:
+
+    /* Laptops baixa resolução */
+    @media screen and (max-width: 1024px) {
+        .content {
+            // display: flex;
+            // gap: 3.4rem;
+            flex-direction: column;
+
+            .card-featured {
+                max-width: 100%;
+                height: auto;
+                padding: 3rem;
+
+                text-align: center;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: center;
+                // align-items: center;
+
+                .bg-icon {
+                    margin: auto;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+
+    /* Tablets */
+    @media screen and (max-width: 767px) {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+
+        .top {
+            flex-direction: column;
+
+            text-align: center;
+            margin-bottom: 4rem;
+
+            h2 {
+                margin-bottom: 2rem;
+            }  
+        }
+
+        .content {            
+            .list-resources {
+                padding: 0;
+                text-align: center;
+
+                gap: 2.5rem;
+                justify-content: space-between;
+                
+                li {
+                    .bg-icon {
+                        margin: auto;
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Mobile geral */
+    @media screen and (max-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+        .content {   
+            gap: 47px;
+
+            .card-featured {
+                .bg-icon {
+                    margin-bottom: 20px;
+                }
+                .info {
+                    h3 {
+                        margin-bottom: 14px;
+                    }
+                }
+            }
+
+            .list-resources {
+                padding-bottom: 30px;
+                gap: 50px;
+                flex-direction: column;
+                
+                li {
+                    max-width: 100%;
+                    padding: 0;
+                    padding-right: 26.4px;
+                    
+                    text-align: left;
+                
+                    display: flex;
+                    gap: 30px;
+                    
+                    .bg-icon {
+                        margin: 0;
+
+                        min-width: 64px;
+                        min-height: 64px;
+                        
+                        // padding: 20px;
+                    }
+                &:last-child .bg-icon {
+                    padding-top: 23px;
+                }
+
+                    .info {
+                        h3 {
+                            margin-bottom: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
