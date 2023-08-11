@@ -42,6 +42,8 @@ section.s-hero {
             align-items: center;
             gap: 1.6rem;
 
+            color: $color-white;
+
             img {
                 background-color: rgba(124, 90, 186, 0.40);
                 border-radius: 6px;
@@ -140,7 +142,7 @@ section.s-hero {
     }
 }
 
-section.s-resources {
+section#s-resources {
     @include spacing-lateral();
     padding-top: 14.9rem;
     padding-bottom: 9.9rem;
